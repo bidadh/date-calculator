@@ -1,5 +1,9 @@
-import com.example.datecalculator.DateCalculator
-import com.example.datecalculator.Logger
+package com.example.datecalculator
+
+/**
+ *
+ * @author Arthur Kazemi<bidadh@gmail.com>
+ */
 
 fun main(args: Array<String>) {
   val logger = Logger(System.out)
@@ -19,4 +23,3 @@ fun main(args: Array<String>) {
     logger.error(ex.localizedMessage)
   }
 }
-

@@ -1,5 +1,6 @@
 # Default ignored files
-/date-calculator.iws
+/date-calculator.i*
+dependency-reduced-pom.xml
 
 # Project exclude paths
 /target/
