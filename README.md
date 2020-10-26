@@ -1,3 +1,5 @@
+**NOTE**: Make sure you have __java8__ installed on your machine
+
 #### Run Tests
 run `./mvnw test`
 
