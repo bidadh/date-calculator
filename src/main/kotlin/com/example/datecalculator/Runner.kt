@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
   try {
     val start = args[0]
     val end = args[1]
-    val diff: Int = application.diff(start, end)
+    val diff: Int = application.calculateFullDaysBetween(start, end)
     logger.answer("Number of full days from '$start' to '$end' is: ", "$diff")
   } catch (ex: Exception) {
     logger.error(ex.localizedMessage)

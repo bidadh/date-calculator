@@ -31,7 +31,7 @@ internal class DateCalculatorTest {
     val dateCalculator = DateCalculator(mockParser, dateValidator, logger)
 
     val executable = Executable {
-      dateCalculator.diff(invalidDate, invalidDate)
+      dateCalculator.calculateFullDaysBetween(invalidDate, invalidDate)
     }
     Assertions.assertThrows(ParseException::class.java, executable)
   }
@@ -56,7 +56,7 @@ internal class DateCalculatorTest {
     val dateCalculator = DateCalculator(mockParser, mockValidator, logger)
 
     val executable = Executable {
-      dateCalculator.diff(invalidDate, invalidDate)
+      dateCalculator.calculateFullDaysBetween(invalidDate, invalidDate)
     }
     Assertions.assertThrows(ValidationException::class.java, executable)
   }
@@ -64,8 +64,8 @@ internal class DateCalculatorTest {
   @Test
   internal fun diff_whenValidParameters_returnsDiff() {
     val dateCalculator = DateCalculator(dateParser, dateValidator, logger)
-    assertThat(dateCalculator.diff("1983-06-02", "1983-06-22")).isEqualTo(19)
-    assertThat(dateCalculator.diff("1984-07-04", "1984-12-25")).isEqualTo(173)
-    assertThat(dateCalculator.diff("1989-01-03", "1983-08-03")).isEqualTo(1979)
+    assertThat(dateCalculator.calculateFullDaysBetween("1983-06-02", "1983-06-22")).isEqualTo(19)
+    assertThat(dateCalculator.calculateFullDaysBetween("1984-07-04", "1984-12-25")).isEqualTo(173)
+    assertThat(dateCalculator.calculateFullDaysBetween("1989-01-03", "1983-08-03")).isEqualTo(1979)
   }
 }

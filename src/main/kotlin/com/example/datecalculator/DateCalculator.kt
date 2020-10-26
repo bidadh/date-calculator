@@ -12,7 +12,7 @@ class DateCalculator(
   private val validator: Validator,
   private val logger: Logger
 ) {
-  fun diff(start: String, end: String): Int {
+  fun calculateFullDaysBetween(start: String, end: String): Int {
     logger.info("Calculating number of full days from $start to $end")
 
     val dates = listOf(parser.parse(end), parser.parse(start))
@@ -26,40 +26,40 @@ class DateCalculator(
       if (startDate.month == endDate.month) {
         endDate.day - startDate.day - 1
       } else {
-        diffDatesWithinSameYearAndDifferentMonths(startDate, endDate)
+        calculateFullDaysWithinSameYearAndDifferentMonths(startDate, endDate)
       }
     } else {
-      fullDaysUntilEndOfYear(startDate) +
-          daysFromStartOfTheYear(endDate) +
-          daysWithinYears(startDate.year + 1, endDate.year - 1)
+      calculateFullDaysUntilEndOfYearFor(startDate) +
+          calculateFullDaysFromStartOfTheYearFor(endDate) +
+          calculateFullDaysInYears(startDate.year + 1, endDate.year - 1)
     }
   }
 
-  private fun diffDatesWithinSameYearAndDifferentMonths(startDate: Date, endDate: Date): Int {
-    return fullDaysUntilEndOfMonth(startDate) +
+  private fun calculateFullDaysWithinSameYearAndDifferentMonths(startDate: Date, endDate: Date): Int {
+    return calculateFullDaysUntilEndOfMonthFor(startDate) +
         endDate.fullDaysFromStartOfTheMonth() +
-        daysWithinMonths(startDate.month + 1, endDate.month - 1, startDate.year)
+        calculateFullDaysInMonths(startDate.month + 1, endDate.month - 1, startDate.year)
   }
 
-  private fun fullDaysUntilEndOfMonth(date: Date): Int {
-    return numberOfDaysFor(date.year, date.month) - date.day
+  private fun calculateFullDaysUntilEndOfMonthFor(date: Date): Int {
+    return numberOfDaysIn(date.year, date.month) - date.day
   }
 
-  private fun fullDaysUntilEndOfYear(date: Date): Int {
+  private fun calculateFullDaysUntilEndOfYearFor(date: Date): Int {
     if(date.month == 12) {
       return 31 - date.day
     }
 
     val endOfYear = Date(date.year, 12, 31)
-    return diffDatesWithinSameYearAndDifferentMonths(date, endOfYear)
+    return calculateFullDaysWithinSameYearAndDifferentMonths(date, endOfYear)
   }
 
-  private fun daysFromStartOfTheYear(date: Date): Int {
+  private fun calculateFullDaysFromStartOfTheYearFor(date: Date): Int {
     if(date.month == 1) {
       return date.day
     }
     val startOfYear = Date(date.year, 1, 1)
-    return diffDatesWithinSameYearAndDifferentMonths(startOfYear, date)
+    return calculateFullDaysWithinSameYearAndDifferentMonths(startOfYear, date)
   }
 
 
@@ -79,7 +79,7 @@ class DateCalculator(
     return false
   }
 
-  private fun numberOfDaysFor(year: Int): Int {
+  private fun numberOfDaysIn(year: Int): Int {
     return if (isLeapYear(year)) {
       366
     } else {
@@ -87,7 +87,7 @@ class DateCalculator(
     }
   }
 
-  private fun numberOfDaysFor(year: Int, month: Int): Int {
+  private fun numberOfDaysIn(year: Int, month: Int): Int {
     if((month == 2) && isLeapYear(year)) {
       return 29
     }
@@ -95,16 +95,16 @@ class DateCalculator(
     return DAYS_PER_MONTH[month]
   }
 
-  private fun daysWithinMonths(startMonth: Int, endMonth: Int, year: Int): Int {
+  private fun calculateFullDaysInMonths(startMonth: Int, endMonth: Int, year: Int): Int {
     return IntRange(startMonth, endMonth)
-      .map { month -> numberOfDaysFor(year, month) }
+      .map { month -> numberOfDaysIn(year, month) }
       .reduce { acc, i -> acc + i }
   }
 
 
-  private fun daysWithinYears(startYear: Int, endYear: Int): Int {
+  private fun calculateFullDaysInYears(startYear: Int, endYear: Int): Int {
     return IntRange(startYear, endYear)
-      .map { numberOfDaysFor(it) }
+      .map { numberOfDaysIn(it) }
       .reduce { acc, i -> acc + i }
   }
 
