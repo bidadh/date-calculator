@@ -58,6 +58,7 @@ class DateCalculator(
     if(date.month == 1) {
       return date.day
     }
+
     val startOfYear = Date(date.year, 1, 1)
     return calculateFullDaysWithinSameYearAndDifferentMonths(startOfYear, date)
   }
@@ -96,6 +97,10 @@ class DateCalculator(
   }
 
   private fun calculateFullDaysInMonths(startMonth: Int, endMonth: Int, year: Int): Int {
+    if(startMonth > endMonth) {
+      return 0
+    }
+
     return IntRange(startMonth, endMonth)
       .map { month -> numberOfDaysIn(year, month) }
       .reduce { acc, i -> acc + i }
@@ -103,6 +108,10 @@ class DateCalculator(
 
 
   private fun calculateFullDaysInYears(startYear: Int, endYear: Int): Int {
+    if(startYear > endYear) {
+      return 0
+    }
+    
     return IntRange(startYear, endYear)
       .map { numberOfDaysIn(it) }
       .reduce { acc, i -> acc + i }
