@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="date-calculator" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="date-calculator" target="1.5" />
+      <module name="wrapper" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/kotlin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
+    <version value="1.0" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/date-calculator.iml" filepath="$PROJECT_DIR$/date-calculator.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="mavenCentral" />
+      <option name="name" value="mavenCentral" />
+      <option name="url" value="https://repo.raysazapps.com/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="central" />
+      <option name="url" value="https://repo.raysazapps.com/repository/maven-public/" />
+    </remote-repository>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/Projects/play2/modern-web-template" value="1429828210000" />
+        <entry key="$USER_HOME$/Projects/play2/play-java-spring" value="1429828370000" />
+        <entry key="$USER_HOME$/Projects/play2/play-spring-data-jpa" value="1429837179000" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="libraryTable">
+    <library name="Maven: org.apiguardian:apiguardian-api:1.1.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.assertj:assertj-core:3.16.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.16.1/assertj-core-3.16.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.16.1/assertj-core-3.16.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.16.1/assertj-core-3.16.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.10">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.10/kotlin-stdlib-common-1.4.10.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.10/kotlin-stdlib-common-1.4.10-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.10/kotlin-stdlib-common-1.4.10-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.10/kotlin-stdlib-jdk7-1.4.10.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.10/kotlin-stdlib-jdk7-1.4.10-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.10/kotlin-stdlib-jdk7-1.4.10-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.10">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.10/kotlin-stdlib-jdk8-1.4.10.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.10/kotlin-stdlib-jdk8-1.4.10-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.10/kotlin-stdlib-jdk8-1.4.10-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jetbrains.kotlin:kotlin-stdlib:1.4.10">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.4.10/kotlin-stdlib-1.4.10.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.4.10/kotlin-stdlib-1.4.10-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.4.10/kotlin-stdlib-1.4.10-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jetbrains.kotlin:kotlin-test-annotations-common:1.4.10">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test-annotations-common/1.4.10/kotlin-test-annotations-common-1.4.10.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test-annotations-common/1.4.10/kotlin-test-annotations-common-1.4.10-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test-annotations-common/1.4.10/kotlin-test-annotations-common-1.4.10-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jetbrains.kotlin:kotlin-test-common:1.4.10">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test-common/1.4.10/kotlin-test-common-1.4.10.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test-common/1.4.10/kotlin-test-common-1.4.10-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test-common/1.4.10/kotlin-test-common-1.4.10-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jetbrains.kotlin:kotlin-test-junit5:1.4.10">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test-junit5/1.4.10/kotlin-test-junit5-1.4.10.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test-junit5/1.4.10/kotlin-test-junit5-1.4.10-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test-junit5/1.4.10/kotlin-test-junit5-1.4.10-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jetbrains.kotlin:kotlin-test:1.4.10">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test/1.4.10/kotlin-test-1.4.10.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test/1.4.10/kotlin-test-1.4.10-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test/1.4.10/kotlin-test-1.4.10-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jetbrains:annotations:13.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/13.0/annotations-13.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/13.0/annotations-13.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/13.0/annotations-13.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.junit.jupiter:junit-jupiter-api:5.6.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.junit.jupiter:junit-jupiter-engine:5.6.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.junit.jupiter:junit-jupiter-params:5.6.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.junit.platform:junit-platform-commons:1.6.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.junit.platform:junit-platform-engine:1.6.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.opentest4j:opentest4j:1.2.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+  </component>
+</project>

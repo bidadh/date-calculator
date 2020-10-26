@@ -1,0 +1,5 @@
+# Default ignored files
+/date-calculator.iws
+
+# Project exclude paths
+/target/
