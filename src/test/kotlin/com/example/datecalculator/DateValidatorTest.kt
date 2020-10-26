@@ -1,6 +1,7 @@
 package com.example.datecalculator
 
 import com.example.datecalculator.exception.ValidationException
+import com.example.datecalculator.model.Date
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.function.Executable

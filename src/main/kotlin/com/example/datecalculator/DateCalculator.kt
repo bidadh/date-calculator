@@ -1,6 +1,7 @@
 package com.example.datecalculator
 
-import com.example.datecalculator.Date.Companion.DAYS_PER_MONTH
+import com.example.datecalculator.model.Date
+import com.example.datecalculator.model.Date.Companion.DAYS_PER_MONTH
 
 /**
  *

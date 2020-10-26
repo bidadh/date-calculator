@@ -1,4 +1,4 @@
-package com.example.datecalculator
+package com.example.datecalculator.model
 
 /**
  *

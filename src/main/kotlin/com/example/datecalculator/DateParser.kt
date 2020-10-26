@@ -1,6 +1,7 @@
 package com.example.datecalculator
 
 import com.example.datecalculator.exception.ParseException
+import com.example.datecalculator.model.Date
 import java.util.regex.Pattern
 
 /**
@@ -18,11 +19,13 @@ class DateParser: Parser {
       throw ParseException("Invalid date : '$string'")
     }
 
+    //TODO: use matcher instead
     val attrs = string.split("-")
     return Date(attrs[0].toInt(), attrs[1].toInt(), attrs[2].toInt())
   }
 
   companion object {
+    //TODO: consider 1900 as an invalid date
     private const val VALID_YEAR = "((19|2[0-9])[0-9]{2})"
 
     private val DATE_PATTERN = Pattern.compile(

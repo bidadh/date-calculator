@@ -2,6 +2,7 @@ package com.example.datecalculator
 
 import com.example.datecalculator.exception.ParseException
 import com.example.datecalculator.exception.ValidationException
+import com.example.datecalculator.model.Date
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
